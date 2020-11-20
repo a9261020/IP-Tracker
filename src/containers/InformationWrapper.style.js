@@ -1,0 +1,29 @@
+import styled from "styled-components";
+import { borderRadius } from "../components/IpInput.style";
+import device from "../device";
+
+const Wrapper = styled.div`
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70%;
+    margin: auto;
+    padding: 50px 20px;
+    border-radius: ${borderRadius};
+    background-color: #fff;
+    color: #333;
+
+    @media ${device.tablet} {
+        flex-flow: column;
+        align-items: center;
+        width: calc(100% - 60px);
+        padding: 20px;
+    }
+`;
+
+export default Wrapper;
