@@ -20,14 +20,14 @@ const InformationItem = styled.div`
     h2 {
         margin-bottom: 10px;
         font-size: .8rem;    
-        font-weight: 300;
-        color: #999;    
-
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: hsl(0, 0%, 59%);    
     }
 
     h3 {
         font-size: 1.2rem;
-        font-weight: 700;
+        font-weight: 500;
     }
 `;
 

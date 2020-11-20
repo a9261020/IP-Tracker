@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     padding: 50px 20px;
     border-radius: ${borderRadius};
     background-color: #fff;
-    color: #333;
+    color: hsl(0, 0%, 17%);
 
     @media ${device.tablet} {
         flex-flow: column;

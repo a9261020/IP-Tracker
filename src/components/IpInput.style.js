@@ -37,7 +37,7 @@ export const InputBtn = styled.button`
     cursor: pointer;
 
     &:hover {
-        background-color: #3f3f3f;
+        background-color: hsl(0, 0%, 17%);
     }
     &:focus{
         outline: none;

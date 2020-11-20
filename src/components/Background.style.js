@@ -12,7 +12,8 @@ const BackgroundWrapper = styled.div`
     color: #fff;
 
     h1 {
-        padding: 10px 0;        
+        padding: 20px 0;  
+        font-size: 2rem;      
     }
 
     @media ${device.tablet} {
