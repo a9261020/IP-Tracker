@@ -7,7 +7,7 @@ const BackgroundWrapper = styled.div`
     background: url(${bgImg}) no-repeat 100% 100%/100% 100%;
     width: 100%;
     height: 30vh;
-    padding: 30px;
+    padding-top: 40px;
     text-align: center;
     color: #fff;
 
