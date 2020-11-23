@@ -12,13 +12,13 @@ const BackgroundWrapper = styled.div`
     color: #fff;
 
     h1 {
-        padding: 20px 0;  
+        padding: 15px 0;  
         font-size: 2rem;      
     }
 
     @media ${device.tablet} {
         padding: 0 30px;
-        height: 35vh;
+        height: 40vh;
         h1 {
             font-size: 1.5rem;
         }

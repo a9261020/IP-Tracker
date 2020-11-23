@@ -23,11 +23,17 @@ const InformationItem = styled.div`
         font-weight: 400;
         letter-spacing: 2px;
         color: hsl(0, 0%, 59%);    
+        @media ${device.tablet} {
+            font-size: .2rem;
+        }
     }
 
     h3 {
         font-size: 1.2rem;
         font-weight: 500;
+        @media ${device.tablet} {
+            font-size: 1rem;
+        }
     }
 `;
 

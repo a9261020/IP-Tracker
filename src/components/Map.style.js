@@ -7,7 +7,7 @@ const Map = styled.div`
     background-color: #999;
 
     @media ${device.tablet} {
-        height: 65vh;
+        height: 60vh;
     }
 `;
 
