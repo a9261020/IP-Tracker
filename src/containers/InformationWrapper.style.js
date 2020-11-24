@@ -7,6 +7,7 @@ const Wrapper = styled.div`
     top: 100%;
     right: 0;
     left: 0;
+    z-index: 999;
     transform: translateY(-50%);
     display: flex;
     justify-content: space-around;
