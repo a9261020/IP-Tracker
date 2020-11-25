@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { borderRadius } from "../components/IpInput.style";
+import { borderRadius } from "./IpInput.style";
 import device from "../device";
 
 const Wrapper = styled.div`
