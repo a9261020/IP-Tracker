@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import Wrapper from "./InformationWrapper.style";
+import Wrapper from "../components/InformationWrapper.style";
 import Information from "../components/Information";
 
 const InformationWrapper = ({ ipInfo }) => (
