@@ -1,19 +1,44 @@
 import PropTypes from "prop-types";
 import InformationItem from "./Information.style";
 
-const Information = ({ test }) => (
+const Information = ({ ipInfo }) => (
     <>
-        {test.map((item) => (
-            <InformationItem key={item.title}>
-                <h2 className="title">{item.title}</h2>
-                <h3 className="content">{item.content}</h3>
-            </InformationItem>
-        ))}
+        <InformationItem>
+            <h2 className="title">IP ADDRESS</h2>
+            <h3 className="content">{ipInfo.ip}</h3>
+        </InformationItem>
+        <InformationItem>
+            <h2 className="title">LOCATION</h2>
+            {ipInfo.location && ipInfo.location.region && (
+                <h3 className="content">
+                    {`${ipInfo.location.region}, ${ipInfo.location.country}${ipInfo.location.postalCode}`}
+                </h3>
+            )}
+        </InformationItem>
+        <InformationItem>
+            <h2 className="title">TIMEZONE</h2>
+            <h3 className="content">{ipInfo.location.timezone}</h3>
+        </InformationItem>
+        <InformationItem>
+            <h2 className="title">ISP</h2>
+            {ipInfo.location && ipInfo.location.region && (
+                <h3 className="content">{ipInfo.isp}</h3>
+            )}
+        </InformationItem>
     </>
 );
 
 Information.propTypes = {
-    test: PropTypes.instanceOf(Array).isRequired,
+    ipInfo: PropTypes.shape({
+        location: PropTypes.shape({
+            region: PropTypes.string,
+            country: PropTypes.string,
+            postalCode: PropTypes.string,
+            timezone: PropTypes.string,
+        }),
+        isp: PropTypes.string,
+        ip: PropTypes.string,
+    }).isRequired,
 };
 
 export default Information;
