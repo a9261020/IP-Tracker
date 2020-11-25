@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import "./reset.css";
-import Background from "./components/Background";
-import Map from "./components/Map";
+import Background from "./containers/Background";
+import Map from "./containers/Map";
 
 const App = () => {
     const [ipInfo, setIpInfo] = useState({
@@ -22,9 +22,7 @@ const App = () => {
             .then((res) => setIpInfo(res.data));
     }, [ip]);
 
-    const ipSubmit = (searchIp) => {
-        setIp(searchIp);
-    };
+    const ipSubmit = (searchIp) => setIp(searchIp);
 
     return (
         <div className="App">
