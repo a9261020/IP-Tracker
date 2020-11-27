@@ -9,11 +9,9 @@ const Information = ({ ipInfo }) => (
         </InformationItem>
         <InformationItem>
             <h2 className="title">LOCATION</h2>
-            {ipInfo.location && ipInfo.location.region && (
-                <h3 className="content">
-                    {`${ipInfo.location.region}, ${ipInfo.location.country}${ipInfo.location.postalCode}`}
-                </h3>
-            )}
+            <h3 className="content">
+                {`${ipInfo?.location?.region ?? ""}, ${ipInfo?.location?.country ?? ""}${ipInfo?.location?.postalCode ?? ""}`}
+            </h3>
         </InformationItem>
         <InformationItem>
             <h2 className="title">TIMEZONE</h2>
