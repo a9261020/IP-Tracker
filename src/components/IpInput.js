@@ -12,8 +12,8 @@ const IpInput = ({ ipSubmit }) => {
 
     return (
         <InputWrapper>
-            <Input onChange={ipHandler} />
-            <InputBtn onClick={searchHandler}>
+            <Input aria-label="type search ip" onChange={ipHandler} />
+            <InputBtn aria-label="search btn" onClick={searchHandler}>
                 <IconArrow />
             </InputBtn>
         </InputWrapper>
